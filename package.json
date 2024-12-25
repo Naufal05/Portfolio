@@ -1,12 +1,15 @@
 {
   "name": "3dfolio",
+  "homepage": "http://Naufal05.github.io/Portfolio",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "vite build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@emailjs/browser": "^3.10.0",
@@ -26,8 +29,16 @@
     "@types/react-dom": "^18.0.10",
     "@vitejs/plugin-react": "^3.1.0",
     "autoprefixer": "^10.4.13",
+    "gh-pages": "^6.2.0",
     "postcss": "^8.4.21",
     "tailwindcss": "^3.2.6",
     "vite": "^4.1.0"
-  }
+  },
+   "browserslist": [
+    "defaults",
+    "not IE 11",
+    "last 2 versions",
+    "> 0.2%",
+    "not dead"
+  ]
 }
